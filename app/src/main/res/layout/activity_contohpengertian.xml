@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/contohpengertian"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Materi_pengertian">
+
+    <FrameLayout
+        android:id="@+id/ganti"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/Nav_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@android:color/holo_blue_dark"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+
+            />
+
+
+
+
+    </FrameLayout>
+    <android.support.design.widget.NavigationView
+        android:id="@+id/Nav_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@android:color/white"
+        app:headerLayout="@layout/nav_header"
+        app:itemTextColor="@android:color/holo_blue_dark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:menu="@menu/menu_navigation"
+        tools:layout_editor_absoluteX="-92dp">
+
+    </android.support.design.widget.NavigationView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="80dp"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/layout"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="78dp"
+                android:fontFamily="casual"
+                android:text="
+             Contoh Soal Pengertian"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="visible"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="213dp"
+                android:fontFamily="casual"
+                android:text="Apa Yang dimaksud dengan Function Depedency?
+Jawaban: Fungsional yang menggambarkan  hubungan, batasan, keterkaitan antara atribut-atribut dalam relasi"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textSize="18sp"
+                tools:ignore="HardcodedText" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="141dp"
+                android:layout_gravity="bottom"
+                android:contentDescription="@string/Materi"
+                android:longClickable="false"
+                android:src="@drawable/tabel4" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="casual"
+                android:gravity="center|fill|clip_vertical"
+                android:text="Dari tabel diatas manakah yang merupakan Function Dependency dari Nilai?
+Jawaban: NIM -> NamaMhs
+    {Matakuliah,NIM} ->NilaiHuruf
+Hal ini dikarenakan atribut NilaiHuruf tergantung pada matakuliah dan NIM. Jika Matakuliah dan NIM yang sama, maka NilaiHuruf juga sama."
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textSize="18sp"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+    </ScrollView>
+</android.support.v4.widget.DrawerLayout>

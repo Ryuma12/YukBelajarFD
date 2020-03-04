@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Yuk Belajar FD!</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Materi" />
+    <string name="SubMenu" />
+    <string name="logo">LOGO</string>
+    <string name="Pengertian" />
+    <string name="FullFunctonDepedency" />
+    <string name="PartiallyDepedency" />
+    <string name="ContohSoal" />
+</resources>

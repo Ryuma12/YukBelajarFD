@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group>
+        <item
+            android:id="@+id/Nav_catatan"
+            android:title="Catatan"
+            />
+        <item
+            android:title="Materi Pengetian Function Depedency"
+            android:id="@+id/Nav_Mpengertian"
+            />
+        <item
+            android:title="Materi Full Function Depedency"
+            android:id="@+id/Nav_MFull"
+            />
+        <item
+            android:title="Materi Partially dependency"
+            android:id="@+id/Nav_Mpartilly"
+            />
+        <item
+            android:title="Materi Transitive dependency"
+            android:id="@+id/Nav_Mtransitive"
+            />
+        <item
+            android:title="Contoh soal Pengetian Function Depedency"
+            android:id="@+id/Nav_Cpengertian"
+            />
+        <item
+            android:title="Contoh soal Full Function Depedency"
+            android:id="@+id/Nav_CFull"
+            />
+        <item
+            android:title="Contoh soal Partially dependency"
+            android:id="@+id/Nav_Cpartilly"
+            />
+        <item
+            android:title="Contoh soal Transitive dependency"
+            android:id="@+id/Nav_Ctransitive"
+             />
+        <item
+            android:title="Tentang"
+            android:id="@+id/Nav_Tentang"
+            />
+    </group>
+
+
+</menu>

@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible"
+    tools:context=".Homepage">
+
+
+    <FrameLayout
+        android:id="@+id/ganti"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/Nav_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@android:color/holo_blue_dark"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+
+            />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="275dp"
+            android:contentDescription="@string/logo"
+            app:srcCompat="@drawable/imklogo" />
+
+
+
+    </FrameLayout>
+    <android.support.design.widget.NavigationView
+    android:id="@+id/Nav_menu"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    android:background="@android:color/white"
+    app:headerLayout="@layout/nav_header"
+    app:itemTextColor="@android:color/holo_blue_dark"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="1.0"
+    app:menu="@menu/menu_navigation"
+    tools:layout_editor_absoluteX="-92dp">
+
+</android.support.design.widget.NavigationView>
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="386dp"
+        android:layout_height="354dp"
+        android:layout_marginTop="212dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="376dp"
+            android:layout_height="500dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/Materi"
+                android:layout_width="89dp"
+                android:layout_height="33dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="8dp"
+                android:text="materi"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.057"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="HardcodedText"
+                tools:textSize="24sp" />
+
+            <Button
+                android:id="@+id/matPengertian"
+                android:layout_width="134dp"
+                android:layout_height="55dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="3dp"
+                android:text="pengertian"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/MatFull"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.139"
+                tools:ignore="HardcodedText" />
+
+            <Button
+                android:id="@+id/MatFull"
+                android:layout_width="134dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="200dp"
+                android:layout_marginEnd="8dp"
+                android:text="Full Functon Depedency"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.139"
+                tools:ignore="HardcodedText" />
+
+            <Button
+                android:id="@+id/MatPartially"
+                android:layout_width="128dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="20dp"
+                android:text="Partially Depedency"
+                app:layout_constraintBottom_toTopOf="@+id/Contoh"
+                app:layout_constraintEnd_toStartOf="@+id/matTrans"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/matPengertian"
+                app:layout_constraintVertical_bias="0.578"
+                tools:ignore="HardcodedText" />
+
+            <Button
+                android:id="@+id/matTrans"
+                android:layout_width="124dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="52dp"
+                android:text="Transitive Depedency"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/MatFull"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/Contoh"
+                android:layout_width="158dp"
+                android:layout_height="37dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="236dp"
+                android:layout_marginEnd="8dp"
+                android:text="Contoh Soal"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.058"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="HardcodedText"
+                tools:textSize="24sp" />
+
+            <Button
+                android:id="@+id/ConPengertian"
+                android:layout_width="124dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="28dp"
+                android:text="Pengertian"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Contoh"
+                tools:ignore="HardcodedText" />
+
+            <Button
+                android:id="@+id/conFull"
+                android:layout_width="133dp"
+                android:layout_height="54dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="92dp"
+                android:layout_marginEnd="40dp"
+                android:text="Full Function Depdency"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/ConPengertian"
+                app:layout_constraintTop_toBottomOf="@+id/matTrans"
+                tools:ignore="HardcodedText" />
+
+            <Button
+                android:id="@+id/ConPartially"
+                android:layout_width="124dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="28dp"
+                android:layout_marginEnd="8dp"
+                android:text="Partially Depedency"
+                app:layout_constraintEnd_toStartOf="@+id/conTransitive"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ConPengertian"
+                tools:ignore="HardcodedText" />
+
+            <Button
+                android:id="@+id/conTransitive"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="52dp"
+                android:text="Transitive Depedency"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/conFull"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/Latihan"
+                android:layout_width="97dp"
+                android:layout_height="38dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="48dp"
+                android:text="Latihan"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.029"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="HardcodedText"
+                tools:textSize="24sp" />
+
+            <Button
+                android:id="@+id/TLatihan"
+                android:layout_width="147dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="516dp"
+                android:text="Latihan"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.502"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="HardcodedText" />
+
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+
+</android.support.v4.widget.DrawerLayout>
